@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* .new{
+        text-align: center;
+        margin-top: 70px;
+        font-size: 50px;
+      } */
+     body{
+      background-image: url(./IMAGE/karan-nagpal-12XX5_xhROc-unsplash.jpg);
+      object-fit: cover;
+     }
+        
+      #hea{
+        text-align: center;
+        /* text-decoration: underline; */
+        margin-top: 70px;
+        color: lightgrey;
+
+      }
+     #mon{
+        /* text-decoration: underline; */
+        text-decoration-color:darkmagenta ;
+        
+     }
+     #vaar{
+        /* text-decoration: underline; */
+        text-decoration-color: darkmagenta;
+     }
+     .left{
+        margin:auto;
+     margin-top: 53px;
+        padding: 5px;
+        text-align: center;
+        box-sizing: border-box;
+       
+        height: 70px;
+        width: 400px;
+        border: 3px solid rgb(29, 226, 62);
+        border-radius: 50px;
+        text-align: center;
+        font-size: 50px;
+        color: lightseagreen;
+        /* border-radius: 100px; */
+        font-family: serif;
+        font-weight: bold;
+
+     }
+    
+     .rec{
+        /* box-sizing: border-box; */
+        height: 550px;
+        width: 850px;
+        border: 5px solid rgb(29, 226, 62);
+        /* margin: auto; */
+        margin-top: 37px;
+        /* border-radius: 50%; */
+        background-color: rgb(8, 8, 8);
+        /* position: fixed; */
+        top: 0;
+        width: 50;
+        margin-left: 200px;
+     }
+     .zzz{
+        margin-top: -120px;
+        color: lightyellow;
+
+     }
+     .yyy{
+        margin-top: 25px;
+        color: rgb(0, 170, 255);
+     }
+     .www{
+                 margin-top:-115px;
+                 color: lightpink;
+     }
+     .jaa{
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 50px;
+        /* color: rgb(29, 226, 62); */
+     }
+     
+   
+    </style>
+</head>
+<body>
+    <div class="rec">
+
+    <h1 id="hea">TIME-DATE-MONTH-YEAR</h1>
+
+<div class="new">
+   <h6>zaid</h6>
+    <div class="left">
+    <span id="hr"></span> :
+    <span id="min"></span> : 
+    <span id="sec"></span>
+    <span id="AM/PM"></div> <br><br>
+    <div class="jaa">
+    <h6 class="yyy">DAY : <span id="daa"></span> <span id="vaar"></span></h6> <br>
+    <h6 class="www">MONTH : <span id="mon"></span> </h6><br>
+    <h6 class="zzz">YEAR : <span id="yea"></span></h6>
+</div>
+
+</div>
+</div>
+
+
+
+
+<br>
+<br><br>
+<br><br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h6>Made By Zaid</h6>
+    
+
+
+
+    
+
+
+
+    <script>
+           
+           setInterval(() => {function Time () {
+
+             var date = new Date()
+
+
+            var hour = document.getElementById("hr").innerHTML= date.getHours()
+
+            var minute = document.getElementById("min").innerHTML= date.getMinutes()
+
+            var second = document.getElementById("sec").innerHTML= date.getSeconds()
+
+           if(hour < 12){
+            document.getElementById("AM/PM").innerHTML = "AM"
+           }else{
+            document.getElementById("AM/PM").innerHTML = "PM"
+         }
+           
+
+
+           const days = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+           var day = date.getDay()
+           document.getElementById("vaar").innerHTML = days[day]
+
+
+           const months = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
+           var month = date.getMonth()
+           document.getElementById("mon").innerHTML = months[month]
+
+           var second = document.getElementById("yea").innerHTML= date.getFullYear()
+
+           var second = document.getElementById("daa").innerHTML= date.getDate()
+
+
+
+           }
+           Time()
+
+           },1000 )
+           
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
